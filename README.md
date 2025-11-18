@@ -17,17 +17,17 @@ How to test them? CURL testing commands?
 Notes:
 - `README.md` is important to let me know your project functions, which is crucial to marking the grade
 of your project.
-
+Login
 curl -i -c cookies.txt -X POST http://localhost:8099/login
 -H "Content-Type: application/x-www-form-urlencoded"
 --data "name=guest&password=guest"
-
+Create a book
 curl -i -b cookies.txt -X POST http://localhost:8099/api/books -H "Content-Type: application/json" -d '{"title":"The Pragmatic Programmer","author":"Andrew Hunt","year":1999,"tags":["software","craft"]}'
-
+List the book
 curl -i -b cookies.txt http://localhost:8099/api/books
-
+Update the book
 curl -i -b cookies.txt -X PUT http://localhost:8099/api/books/edit -H "Content-Type: application/json" -d '{"title":"PragProg (20th)","author":"Andrew Hunt","year":2019,"tags":["software","craft"]}'
-
+Delete the book
 curl -i -b cookies.txt -X DELETE http://localhost:8099/api/books/BOOK_ID    
 
-\\\\\\\\\\\\\\
+
