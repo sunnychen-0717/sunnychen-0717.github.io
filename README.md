@@ -20,7 +20,7 @@ of your project.
 
 curl -i -c cookies.txt -X POST http://localhost:8099/login
 -H "Content-Type: application/x-www-form-urlencoded"
---data "name=gueste&password=guest"
+--data "name=guest&password=guest"
 
 curl -i -X POST http://localhost:8099/api/books
 -H "Content-Type: application/json"
