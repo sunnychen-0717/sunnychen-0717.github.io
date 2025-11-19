@@ -18,6 +18,22 @@ Notes:
 - `README.md` is important to let me know your project functions, which is crucial to marking the grade
 of your project.
 
+Default account   
+Name: germany   
+Password: germany    
+
+Name:france  
+Password:123456  
+
+How to run
+download all the file, then run it in Terminal  
+cd project  
+npm install  
+npm start    
+
+
+
+Curl command:  
 Login:  
 curl -i -c cookies.txt -X POST http://localhost:8099/login
 -H "Content-Type: application/x-www-form-urlencoded"
