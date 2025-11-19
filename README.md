@@ -1,6 +1,13 @@
-# 3810project
-1. Project info: Project name, Group info (group no., students’ names, and SID)
-2. Project file intro:
+# COMP3810SEF Group project  
+Project infomation  
+Project name:bookapp  
+Group no: 46  
+Group member:  
+Chen Cheuk Ngai 13822291  
+
+
+
+Project file intro:
 - server.js: a brief summary of the functionalities it provided, …
 - package.json: lists of dependencies, …
 - public (folder, if you have): what static files are included, …
