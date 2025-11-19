@@ -1,0 +1,9 @@
+<h1><%= book.title %></h1>
+<p><strong>Author:</strong> <%= book.author %></p>
+<% if (book.year) { %><p><strong>Year:</strong> <%= book.year %></p><% } %>
+<% if (book.tags && book.tags.length) { %><p><strong>Tags:</strong> <%= book.tags.join(', ') %></p><% } %>
+
+<p>
+  <a class="btn" href="/books">Back</a>
+  <a class="btn" href="/books/<%= book._id %>/edit">Edit</a>
+</p>

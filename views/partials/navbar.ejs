@@ -1,0 +1,12 @@
+<nav class="navbar">
+  <a href="/" class="brand">Book Manager</a>
+  <div class="nav-right">
+    <% if (username) { %>
+      <span class="welcome">Hi, <%= username %></span>
+      <a href="/books">Books</a>
+      <a class="btn" href="/logout">Logout</a>
+    <% } else { %>
+      <a class="btn" href="/login">Login</a>
+    <% } %>
+  </div>
+</nav>

@@ -1,0 +1,8 @@
+<% layout('layout') -%>
+<h1>Welcome to BookApp</h1>
+<p>Track and share your favorite books.</p>
+<% if (!username) { %>
+  <p><a class="btn btn-primary" href="/signup">Create account</a></p>
+<% } else { %>
+  <p><a class="btn" href="/books">Go to your books</a></p>
+<% } %>

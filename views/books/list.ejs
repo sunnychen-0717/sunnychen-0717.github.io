@@ -1,0 +1,30 @@
+<h1>Your Books</h1>
+
+<form method="GET" action="/books" style="margin-bottom:1rem; display:flex; gap:.5rem; flex-wrap:wrap;">
+  <input type="text" name="q" placeholder="Search title or author" value="<%= q %>" />
+  <input type="number" name="yearMin" placeholder="From year" value="<%= yearMin %>" />
+  <input type="number" name="yearMax" placeholder="To year" value="<%= yearMax %>" />
+  <input type="text" name="tag" placeholder="Tag" value="<%= tag %>" />
+  <button class="btn" type="submit">Filter</button>
+</form>
+
+<% if (!books || books.length === 0) { %>
+  <p>No books yet. <a href="/books/new">Add your first book</a>.</p>
+<% } else { %>
+  <ul>
+    <% books.forEach(b => { %>
+      <li>
+        <a href="/books/<%= b._id %>"><strong><%= b.title %></strong></a>
+        by <%= b.author %>
+        <% if (b.year) { %> (<%= b.year %>) <% } %>
+        <% if (b.tags && b.tags.length) { %>
+          — <%= b.tags.join(', ') %>
+        <% } %>
+        — <a href="/books/<%= b._id %>/edit">Edit</a>
+        — <form style="display:inline" method="POST" action="/books/<%= b._id %>?_method=DELETE">
+            <button class="btn" type="submit" onclick="return confirm('Delete this book?')">Delete</button>
+          </form>
+      </li>
+    <% }) %>
+  </ul>
+<% } %>
