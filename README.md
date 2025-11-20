@@ -19,6 +19,7 @@ Project file intro:
 - public (folder, if you have): what static files are included, …
 - views (folder, if you have): what EJS or UI files included, …
 - models (folder, if you have): what model files are included, …
+- routes 
 3. The cloud-based server URL (your server host running on the cloud platform) for testing:
 E.g., https://comp3810sef-group1.render.com/
 4. Operation guides (like a user flow) for your server
@@ -31,7 +32,7 @@ Notes:
 - `README.md` is important to let me know your project functions, which is crucial to marking the grade
 of your project.
 
-Default account   
+Default testing account   
 Name: germany   
 Password: germany    
 
