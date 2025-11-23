@@ -2,7 +2,7 @@
 
 const CONFIG = {
   // Prefer env vars in production. Default to local Mongo in dev (no embedded secrets).
-  MONGODB_URI: process.env.MONGODB_URI || "mongodb://127.0.0.1:27017",
+  MONGODB_URI: process.env.MONGODB_URI || "mongodb+srv://s1382229_db_user:Zxcvbnm24354657@cluster0.m4nihdo.mongodb.net/?appName=Cluster0",
   DB_NAME: process.env.DB_NAME || "bookapp",
   SESSION_SECRET: process.env.SESSION_SECRET || "change_this_secret",
   PORT: process.env.PORT || 8099,
