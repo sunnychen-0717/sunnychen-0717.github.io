@@ -20,18 +20,18 @@ Project file intro:
 - public (folder, if you have): what static files are included, …
 - views (folder, if you have): what EJS or UI files included, …
 - models (folder, if you have): what model files are included, …
-- routes
+- routes : it guide the linux command to correct way to finish what result the user want
 
 
 
   
 We are using render to build up a cloud-based server, there is the cloud-based server URL for testing:  
-http://localhost:8099  
+https://project-cnyy.onrender.com
 
 
 
 
-Operation guides  server
+Operation guides for server
 - Use of Login/Logout pages: a list of valid login information, sign-in steps? …
 - Use of your CRUD web pages: which button or UI is used to implement create, read,
 update, and delete?
@@ -56,7 +56,7 @@ npm install
 npm start    
 
 Run in cloud-based server:  
-
+click on this link: https://project-cnyy.onrender.com
 
 
 Curl command:  
