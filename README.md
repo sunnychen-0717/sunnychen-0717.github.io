@@ -59,7 +59,7 @@ Password: germany
 Name:france  
 Password:123456  
 
-How to run
+How to run  
 Run in local host:  
 download all the file, then run it in Terminal  
 cd project  
