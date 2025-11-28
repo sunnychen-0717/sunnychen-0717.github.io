@@ -7,7 +7,7 @@ Chen Cheuk Ngai 13822291
 NG Chun Pong 13319138  
 Leung Chun Ho 13724170  
 Wang ChenXi 13485478  
-
+Github link: https://github.com/sunnychen-0717/project  
 
 # Project introduction:  
 In this project, we create a bookapp can let the user create their own account. Then they can create the what book they have seen. If they want to eidt or delete the, our app also support these function. On the other hand, We support the user use linux command to finish the create, list, edit and delete funtion.
